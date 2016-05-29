@@ -19,8 +19,17 @@
 <div class = "main" ng-controller = "MainController">
 	<div class="container">
 		<h1>{{title}}</h1>
+		<h2>{{promo}}</h2>
+	</div>
+	<div>
+		<h3>{{product.name}}</h3>
+		<h4>{{product.price}}</h4>	
 	</div>
 </div>
+<div ng-controller = "ChildController">
+	<div>{{title}}</div>
+</div>
+
 <!-- Footer -->
 <div class = "footer">
 	<div class="container"></div>
