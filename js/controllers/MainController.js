@@ -3,7 +3,8 @@ app.controller('MainController', ['$scope', function($scope){
 	$scope.promo = 'A promotion to give you a good discount';
 	$scope.product = {
 		name: 'Moving',
-		price: 115
+		price: 115,
+		pubdate: new Date('1980', '00', '26')
 	};
 }]);
 app.controller("ChildController", ["$scope",function($scope){

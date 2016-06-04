@@ -22,8 +22,9 @@
 		<h2>{{promo}}</h2>
 	</div>
 	<div>
-		<h3>{{product.name}}</h3>
-		<h4>{{product.price}}</h4>	
+		<h3>{{product.name | uppercase}}</h3>
+		<h4>{{product.price | currency}}</h4>	
+		<h3>{{product.pubdate | date}}</h3>
 	</div>
 </div>
 <div ng-controller = "ChildController">
