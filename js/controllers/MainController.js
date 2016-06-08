@@ -11,7 +11,7 @@ app.controller('MainController', ['$scope', function($scope){
 						name: 'Cleaning',
 						price: 110,
 						pubdate: new Date('1980', '00', '26'),
-						comlogo: 'img/moving-company.jpg'
+						cover: 'img/moving-company.jpg'
 					}
 
 					];
