@@ -30,6 +30,7 @@
 			<h3>{{product.pubdate | date}}</h3>
 			<div class = "rating">
 				<p class = "likes" ng-click = "plusOne($index)">+{{product.likes}}</p>
+				<p class = "dislikes" ng-click = "minusOne($index)">{{product.dislikes}}</p>
 			</div>
 		</div>
 	</div>
