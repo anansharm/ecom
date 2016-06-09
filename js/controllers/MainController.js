@@ -5,16 +5,21 @@ app.controller('MainController', ['$scope', function($scope){
 						name: 'Moving',
 						price: 115,
 						pubdate: new Date('1980', '00', '26'),
-						cover: 'img/book-your-move.jpg'
+						cover: 'img/book-your-move.jpg',
+						likes: 0
 					},
 					{
 						name: 'Cleaning',
 						price: 110,
 						pubdate: new Date('1980', '00', '26'),
-						cover: 'img/moving-company.jpg'
+						cover: 'img/moving-company.jpg',
+						likes: 0
 					}
 
 					];
+	$scope.plusOne = function(index){
+		$scope.products[index].likes += 1;
+	};				
 }]);
 app.controller("ChildController", ["$scope",function($scope){
 	$scope.title = "What is going on!";
